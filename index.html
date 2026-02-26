@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио разработчика</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --text-color: #c9d1d9;
+            --accent-color: #58a6ff;
+            --card-bg: #161b22;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #30363d;
+        }
+        h1 { color: #ffffff; margin-bottom: 10px; }
+        .subtitle { color: #8b949e; font-size: 1.1em; }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .project-card {
+            background-color: var(--card-bg);
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+        .project-title {
+            color: var(--accent-color);
+            font-size: 1.25em;
+            margin-top: 0;
+            text-decoration: none;
+        }
+        .project-desc { font-size: 0.9em; color: #8b949e; }
+        .tags { margin-top: 15px; }
+        .tag {
+            display: inline-block;
+            background: #21262d;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.75em;
+            margin-right: 5px;
+            border: 1px solid #30363d;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 6px 12px;
+            background-color: #238636;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.9em;
+        }
+        .btn:hover { background-color: #2ea043; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hi, my name is Andrei 👋</h1>
+            <p class="subtitle">Python Developer | Student | Junior in IT </p>
+            <p>I am making intersting and useful projects and dreams about IT job </p>
+        </header>
+
+        <h2>My projects </h2>
+        <div class="projects-grid">
+            
+            <!-- Проект 1: Твой бот-конвертер -->
+            <div class="project-card">
+                <a href="ССЫЛКА_НА_РЕПОЗИТОРИЙ_БОТА" class="project-title">🤖 Job agregator </a>
+                <p class="project-desc">
+                    Bot for parsing Job places at Head Hunter
+                </p>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Aiogram</span>
+                    <span class="tag">Pillow</span>
+                    <span class="tag">PDF2Docx</span>
+                </div>
+                <a href="ССЫЛКА_НА_БОТА_В_ТГ" class="btn">Try at Telegram</a>
+                <a href="ССЫЛКА_НА_КОД" class="btn" style="background-color: #30363d;">First code</a>
+            </div>
+
+            <!-- Проект 2: Заглушка для будущего -->
+            <div class="project-card">
+                <a href="#" class="project-title">🚀 Следующий проект</a>
+                <p class="project-desc">
+                    Здесь будет описание твоего следующего крутого проекта. 
+                    Может быть, парсер новостей или умный планировщик?
+                </p>
+                <div class="tags">
+                    <span class="tag">В разработке</span>
+                </div>
+            </div>
+
+        </div>
+        
+        <footer style="margin-top: 50px; text-align: center; color: #8b949e; font-size: 0.8em;">
+            &copy; 2026 created by GitHub Pages
+        </footer>
+    </div>
+</body>
+</html>
